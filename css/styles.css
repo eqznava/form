@@ -1,0 +1,89 @@
+body{
+  font-family: helvetica;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #403a3e, #be5869);
+}
+
+.formulario{
+  color: #00dbde;
+  height: 150px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid silver;
+  border-radius: 20px;
+  box-shadow: 0px 8px 35px #000;
+}
+
+.formulario__label{
+  margin: auto 0;
+}
+
+.formulario__name{
+  color: silver;
+  font-size: 16px;
+  margin: auto 0;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background-color: transparent;
+  outline: none;
+}
+
+.formulario__password{
+  color: silver;
+  font-size: 16px;
+  margin: auto 0;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background-color: transparent;
+  outline: none;
+}
+
+
+::placeholder{
+  color: #2c2c2f;
+  letter-spacing: 1.5px;
+}
+
+.formulario__button{
+  color: #00dbde;
+  text-transform: uppercase;
+  outline: none;
+  margin: auto 0;
+  background: transparent;
+  border-radius: 8px;
+  box-shadow: 0px 0px 3px aqua;
+  cursor: pointer;
+  position: relative;
+  z-index: 3;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, .4);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  display: none;
+}
+
+.overlay.is-active {
+  display: block;
+}
+
+input.is-active {
+  position: relative;
+  z-index: 3;
+}
+
+input:focus {
+  box-shadow: 0 0 10px 0 rgba(255, 255, 255, .5);
+}
