@@ -4,8 +4,8 @@ let sWord = document.getElementById("pass");
 let comp = document.getElementById("comparar");
 comp.addEventListener("click", funComparer);
 
-const nombre = "cheko";
-const contraseña = "nuncaparesdeaprender"
+const nombre = "form";
+const contraseña = "hola"
 
 function funComparer(){
   if (pWord.value === nombre && sWord.value === contraseña) {
